@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KeevaServer</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tracking_order">TrackingOrder</string>
+
+    <string-array name="intro">
+        <item>From five star resturrant to koko seller host and manage your orders on keeva food</item>
+        <item>Dont have job ? you can do deliveries and earn money on keeva</item>
+        <item>Login with keeva Business and do deliveries for your restaurant</item>
+    </string-array>
+    <string name="title_activity_tracking_order_custom">Map</string>
+</resources>

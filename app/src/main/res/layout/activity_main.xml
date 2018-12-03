@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.snyper.keevaserver.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <com.felipecsl.gifimageview.library.GifImageView
+            android:id="@+id/gif"
+            android:layout_width="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"
+          android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_height="wrap_content" />
+
+        <com.tomer.fadingtextview.FadingTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:layout_alignEnd="@+id/gif"
+            android:textAppearance="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeTextType="uniform"
+            app:texts="@array/intro"
+            app:timeout="1500" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginChoice"
+            app:tbgChildSpacing="auto"
+            app:tbgChildSpacingForLastRow="align"
+            app:tbgRowSpacing="1dp"
+            app:tbgCheckedButton="@+id/choice_Manager">
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/choice_Manager"
+                android:text="Keeva Manager"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                />
+
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/choice_KeevaCarrier"
+                android:text="Keeva Carrier"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:id="@+id/choice_Custom"
+                android:text="Keeva Custom"
+                android:textSize="24sp"
+                android:textStyle="bold"
+               />
+
+
+        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+        <info.hoang8f.widget.FButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btnSignIn"
+            android:text="Get Started"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            app:fButtonColor="@color/btnSignUp"
+            app:cornerRadius="32dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
